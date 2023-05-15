@@ -133,113 +133,11 @@ footer {
 }
 
 
-@media screen and (min-width:375px) {
 
-    /* ///---------------MENU OPEN CLOSE------------- */
-    #menuImg {
-        display: block;
-    }
+@media screen and (min-width:376px) and (max-width:1439px) {
 
-    .dropbtn {
-        /* background-color: #3498DB; */
-        color: white;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-    }
-
-    .dropbtn:hover,
-    .dropbtn:focus {
-        /* background-color: #2980B9; */
-        background-color: rgb(232, 90, 29);
-
-    }
-
-    .dropdown {
-        position: relative;
-        display: inline-block;
-    }
-
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #fff;
-        min-width: 75%;
-        height: 100%;
-        overflow: auto;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-        right: 0;
-        padding-top: 100px;
-    }
-
-    .dropdown-content img {
-        position: absolute;
-
-        overflow: auto;
-        z-index: 1;
-        right: 20px;
-        top: 3px;
-    }
-
-    .dropdown-content li {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
-
-    .dropdown-content ul {
-        padding-left: 30px;
-    }
-
-    .dropdown li:hover {
-        background-color: #ddd
-    }
-
-    .show {
-        display: block;
-    }
-
-    #menu {
-        display: block;
-        height: 100px;
-        width: 100px;
-        cursor: pointer;
-
-    }
-
-    li {
-        display: none;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-        /* align-content: center; */
-        padding: 20px 10px 0 10px;
-    }
-
-    header {
-        background-image: url('/assets/images/image-web-3-mobile.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 300px;
-    }
-
-    #aside {
-        margin-bottom: 20px;
-    }
-
-    #computer {
-        display: grid;
-    }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 1440px) {
-    #menuImg {
+    #menuImg,
+    #myDropdown>div>img {
         display: none;
     }
 
@@ -251,11 +149,17 @@ footer {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding: 50px 0;
+        padding: 50px 250px 0 230px;
+        font-size: 0.8em;
     }
 
     ul {
         display: flex;
+    }
+
+    /* //---------menu mobile */
+    #myDropdown>ul {
+        display: none;
     }
 
     li {
@@ -263,15 +167,17 @@ footer {
 
         display: block;
         padding: 5px 10px;
-        margin-right: 10px;
+        margin-right: 5px;
     }
 
     header {
-        background-image: url('/assets/images/image-web-3-desktop.jpg');
+        /* background-image: url('/assets/images/image-web-3-desktop.jpg');
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover; */
         height: 300px;
+        margin-bottom: 50px;
+
     }
 
     #main {
@@ -289,6 +195,10 @@ footer {
 
     #header {
         grid-area: head;
+    }
+
+    #brigth {
+        margin: 87px 0px 50px 30px;
     }
 
     #aside {
@@ -312,27 +222,33 @@ footer {
     }
 }
 
-@media only screen and (min-width: 1440px) {
-    #menuImg {
+@media screen and (min-width:1440px) {
+
+    #menuImg,
+    #myDropdown>div>img {
         display: none;
     }
 
+    #myDropdown>ul {
+        display: none;
+    }
 
     #main {
         margin: 0 100px;
 
         display: grid;
         grid-template-areas:
-            "head  asi"
-            "brig  asi"
-            "comp comp";
+            "head head asi"
+            "brig brig asi"
+            "comp  comp comp";
         grid-template-columns: 2fr 1fr;
 
         grid-gap: 40px;
     }
 
-    #header {
+    #header-desktop {
         grid-area: head;
+        width: 400px;
     }
 
     #aside {
