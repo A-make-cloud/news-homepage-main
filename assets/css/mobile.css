@@ -1,0 +1,108 @@
+@media screen and (max-width:375px) {
+
+    /* ///---------------MENU OPEN CLOSE------------- */
+    #menuImg {
+        display: block;
+    }
+
+    .dropbtn {
+        /* background-color: #3498DB; */
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropbtn:hover,
+    .dropbtn:focus {
+        /* background-color: #2980B9; */
+        background-color: rgb(232, 90, 29);
+
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        min-width: 75%;
+        height: 100%;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        right: 0;
+        padding-top: 100px;
+    }
+
+    .dropdown-content img {
+        position: absolute;
+
+        overflow: auto;
+        z-index: 1;
+        right: 20px;
+        top: 3px;
+    }
+
+    .dropdown-content li {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content ul {
+        padding-left: 30px;
+    }
+
+    .dropdown li:hover {
+        background-color: #ddd
+    }
+
+    .show {
+        display: block;
+    }
+
+    #menu {
+        display: block;
+        height: 100px;
+        width: 100px;
+        cursor: pointer;
+
+    }
+
+    li {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        /* align-content: center; */
+        padding: 20px 10px 0 10px;
+    }
+
+    header {
+        /* background-image: url('/assets/images/image-web-3-mobile.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; */
+        height: 300px;
+    }
+
+    #bright {
+        margin: 94px 20px 50px;
+    }
+
+    #aside {
+        margin-bottom: 20px;
+    }
+
+    #computer {
+        display: grid;
+    }
+}
